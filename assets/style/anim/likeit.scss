@@ -1,0 +1,74 @@
+/*  HEART   */
+$violet: #9356dc;
+.heart-anim{
+    position: relative;
+    color: $violet;
+    font-size: 25px;
+    cursor: pointer;
+
+    .empty_heart{
+    position: absolute;
+    bottom: 10%;
+    right:2%;
+    visibility: visible;
+    transition: all 1000ms;
+    cursor: pointer;
+    }
+        
+    .full_heart{
+        display:flex;
+        position: absolute;
+        visibility: hidden;
+        opacity: 0;
+        bottom: 10%;
+        right:2%;
+        cursor: pointer;
+        transition: all 1000ms;
+    }
+            /*  
+            .full_heart:hover{
+                visibility: visible;
+                display:none;
+                opacity:1;
+                transition: opacity 0,8s;
+                z-index:2;
+
+            } */
+    &:hover{
+        .empty_heart{
+            visibility: hidden;
+            opacity: 0;
+            z-index:0;
+        }
+        .full_heart{
+            visibility: visible;
+            opacity: 1;
+            z-index:2;
+        }
+    }
+    &:active{
+        .empty_heart{
+            visibility: hidden;
+            opacity: 0;
+            z-index:0;
+        }
+        .full_heart{
+            visibility: visible;
+            opacity: 1;
+            transition: opacity 0,8s;
+            z-index:2;
+        }
+    }
+    &:visited{
+        .empty_heart{
+            visibility: hidden;
+            opacity: 0;
+        }
+        .full_heart{
+            visibility: visible;
+            opacity: 1;
+            transition: opacity 0,8s;
+        }
+    }
+  
+}

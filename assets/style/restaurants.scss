@@ -1,0 +1,421 @@
+@import "bounce.scss";
+ /*  COLOR   */
+ $violet: #9356dc;
+ $rose: #ff79da;
+ $roseclaire: #F5EDFF; 
+ $blanc: #ffffff;
+ $grey:#D2D2D2;
+ $lightgrey:#EAEAEA;
+ $darkgrey:#353535;
+ $turquoise:#99E2D0;
+  /*  initialize   */
+ *,
+ ::after,
+ ::before {
+     margin: 0; 
+     padding: 0;
+ }
+ 
+ a {
+     text-decoration: none;
+ }
+ body {
+    font-family: 'Roboto', sans-serif;
+}
+
+
+.all-entrees {
+    animation: fondue 0.65s; 
+}
+.all-plats {
+    animation: fondue 1.7s ease-in-out; 
+}
+.all-desserts {
+    animation: fondue 5s ease-in; 
+}
+@keyframes fondue {
+    from {
+        transform: translateY(111px);
+        opacity:0;
+    }
+    to {
+        transform: translateY(0);
+        opacity:1;
+    }
+    }
+
+  
+/*  HEADER LOGO   */
+.header {
+    width: 100vw;
+    display:flex;
+    position: relative;
+    align-items: center;
+    justify-content: center;
+    box-shadow: 2px 2px 12px 1px rgba(0, 0, 0, 0.5);
+z-index: 1;
+}
+.back-home{
+    position:absolute;
+    left:5%;
+    top:30%;
+    font-size: 22px;
+    color:$darkgrey;
+}
+.logo-header {
+    font-family: 'Shrikhand';
+    text-align: center;
+    color:$darkgrey;
+    margin:  1% 3% 2% 5%;;
+ 
+}
+/*  IMAGE BACKGROUND   */
+.img-bg {
+    display: flex;
+  }
+  .img-bg .img {
+
+    object-fit: cover;
+    height: 275px;
+    width: 100vw;
+    z-index: 0;
+  }
+
+     /*  HEART   */
+     .heart-anim {
+        position: relative;
+        color: $violet;
+        font-size: 25px;
+        cursor: pointer;
+        margin-right: 15px;
+
+        .empty_heart{
+        position: absolute;
+        bottom: 10%;
+        right:2%;
+        visibility: visible;
+        transition: 1000ms;
+        cursor: pointer;
+        }
+            
+        .full_heart{
+            display:flex;
+            position: absolute;
+            visibility: hidden;
+            opacity: 0;
+            bottom: 10%;
+            right:2%;
+            cursor: pointer;
+            transition: 1000ms;
+        }
+                /*  
+                .full_heart:hover{
+                    visibility: visible;
+                    display:none;
+                    opacity:1;
+                    transition: opacity 0,8s;
+                    z-index:2;
+
+                } */
+        &:hover{
+            .empty_heart{
+                visibility: hidden;
+                opacity: 0;
+                z-index:0;
+            }
+            .full_heart{
+                visibility: visible;
+                opacity: 1;
+                transition: opacity 0,8s;
+                z-index:2;
+            }
+        }
+        &:active{
+            .empty_heart{
+                visibility: hidden;
+                opacity: 0;
+                z-index:0;
+            }
+            .full_heart{
+                visibility: visible;
+                opacity: 1;
+                transition: opacity 0,8s;
+                z-index:2;
+            }
+        }
+        &:visited
+        {
+            .empty_heart{
+                visibility: hidden;
+                opacity: 0;
+            }
+            .full_heart{
+                visibility: visible;
+                opacity: 1;
+                transition: opacity 0,8s;
+            }
+        }
+      
+    }
+
+/*  MAIN MENU   */
+main {
+    position: relative;
+    background-color: $lightgrey;
+   
+}
+.menu-title {
+    background-color: $lightgrey;
+    width: 100vw;
+    border-radius: 35px 35px 0 0;
+    font-family: 'Shrikhand';
+    z-index: 2;
+    position:absolute;
+    top:240px;
+}
+
+.menu-title h2 {
+    margin-left:5%;
+}
+
+.menu-section {
+    background-color: $lightgrey;
+}
+.menu-section .underline{
+    background-color:  $turquoise;
+    top: 27px;
+    width: 40px;
+    height: 3px;
+    margin: 4px 0 0 13px;
+    margin-left: 5%;
+  }
+.menu-section h3 {
+    font-family: 'Roboto', sans-serif;
+    font-weight: 300;
+    font-size: 16px;
+    margin-left: 5%;
+    padding-top: 23px;
+    
+}
+/** EST CE QU ON peut faire sa seulement en scss ? */
+.text-menu{
+    height: auto;
+    width: 320px;
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    transition: width 1s;
+
+    @media only screen and (max-width:390px){
+        width: 260px;
+    }
+}
+.overflow-ellipsis{
+    text-overflow: ellipsis;
+}
+.card-menu {
+    position: relative;
+   display:flex;
+   flex-direction: column;
+   flex-wrap: wrap ;
+   justify-content: space-between;
+   align-content:space-between;
+    position: relative;
+    height: 69px;
+    width:90%;
+    margin:20px auto;
+    background-color: $blanc; 
+    border-radius: 15px;
+    box-shadow: 0px 1px 7px rgba(0, 0, 0, 0.3);
+    transition: all 1s;
+    cursor: pointer;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+   
+    h4 {
+        margin:10px auto 5px 6px;
+   
+        font-weight: 500;
+        font-size: 18px;
+        overflow: hidden;
+        text-overflow: ellipsis;
+        white-space: nowrap;
+    }
+    p {
+        font-size: 15px;
+        font-weight: 300;
+        margin-left: 6px;
+        margin-bottom: 10px;
+        overflow: hidden;
+        text-overflow: ellipsis;
+        white-space: nowrap;
+    }
+    .XXeuros {
+       flex-direction: row;
+        width:30px;
+        display:flex;
+        justify-content: flex-end;
+        align-items: flex-end;
+        font-family: Roboto;
+        font-size: 15px;
+        font-weight: 700;
+        margin-top: 36px;
+        margin-right: 15px;
+        transition: all 0.6s;
+    }
+    .green-check-it {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    position: absolute;
+    width:1px;
+    top:0px;
+    right: 0px;
+    height:69px; 
+    border-radius: 0 15px 15px 0;
+    background-color:$turquoise;    
+   
+    opacity:0;
+  transition: all 0.6s;
+  .check{
+    opacity:0;
+  }
+    }
+    
+
+}
+.card-menu:hover{
+    box-shadow: 2px 2px 11px rgba(0, 0, 0, 0.6);
+
+    .green-check-it {
+        position: absolute;
+        width:60px;
+        top:0px;
+        right: 0px;
+        height:69px; 
+        border-radius: 0 15px 15px 0;
+        background-color:$turquoise;    
+        opacity:1;
+    z-index: 2;
+    }
+    .XXeuros{
+        margin-right:70px;
+        
+    }
+    .check {
+        width: 30px;
+        height: 30px;
+        animation-name: yeahh;
+        animation-duration: 0.8s;
+        animation-timing-function: ease-in-out;
+opacity:1;
+
+    }
+    /** a verifier **/
+    .text-menu{
+        width: 220px;
+
+        @media only screen and (min-width:520px){
+            width: 300px;
+        }
+
+    }
+}
+@keyframes yeahh {
+    from {
+        transform: translatex(11px) rotate(360deg);
+        opacity:0;
+    }
+    to {
+        transform: translateY(0);
+        opacity:1;
+    }
+    }
+
+
+/*  BOUTON COMMANDER   */
+#remplissage {
+    width:100%;
+    height: 100px;
+    background-color: $lightgrey;
+}
+.btn{ 
+    height: 50px;
+    width: 218px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 33px auto 25px auto;
+    border-radius: 25px;
+    background: linear-gradient(350deg, $violet 35%, $rose 100%);
+    box-shadow: 0px 3px 10px rgba(0, 0, 0, 0.4);
+    transition-property: transform;
+    transition-duration: 400ms;
+    transition: opacity 800ms ease-in-out;
+    transition: box-shadow 0.8s ease-in-out;
+    opacity: 1;
+   
+ }
+ .btn a{ 
+    color:$blanc;
+
+ }
+
+ .btn:hover {
+    box-shadow: 1px 4px 15px rgba(0, 0, 0, 0.5);
+    background: linear-gradient(-350deg, lighten($violet,2) 35%, lighten($rose,2) 100%); 
+    opacity: 0.6;
+    transition: opacity 800ms ease-in-out;
+ }
+/**/
+ /*  FOOTER   */
+footer {
+    background-color: $darkgrey;
+    color: $blanc;
+  padding: 10px 0;
+    height: 186px;
+
+    }
+        
+    footer ul{
+    
+    color:$blanc;
+
+    }
+        footer ul li a{
+           
+            color:$blanc;
+            margin-left: 5%;
+        }
+        #section-footer {
+            color: #ffffff;
+            margin: 2% ;
+            width:300px;
+        }
+        footer li {
+            line-height: 2em; /* espace entre les li proportionnel a la taille de la police */
+            list-style-type:none;
+            list-style-position:outside;
+            color: $blanc;
+          
+          }
+        
+        
+          footer li i{
+           margin-right: 10px;
+           width:18px;
+          
+          }
+        
+                .logo-footer {
+                    font-size: 18px;
+                    font-family: 'Shrikhand';
+                    color:$blanc;
+              
+                    margin:  5%3% 2% 5%;
+                   
+                }
+
+
+              
