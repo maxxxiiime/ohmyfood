@@ -208,9 +208,10 @@ main {
     text-overflow: ellipsis;
     transition: width 1s;
 
-    @media only screen and (max-width:390px){
-        width: 250px;
+    @media only screen and (max-width:375px){
+        width: 255px;
     }
+
 }
 .overflow-ellipsis{
     text-overflow: ellipsis;
@@ -316,9 +317,9 @@ opacity:1;
     }
     /** a verifier **/
     .text-menu{
-        width: 220px;
+        width: 190px;
 
-        @media only screen and (min-width:520px){
+        @media only screen and (min-width:426px){
             width: 300px;
         }
 

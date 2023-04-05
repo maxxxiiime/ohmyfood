@@ -207,9 +207,9 @@ main {
   text-overflow: ellipsis;
   transition: width 1s;
 }
-@media only screen and (max-width: 390px) {
+@media only screen and (max-width: 375px) {
   .text-menu {
-    width: 250px;
+    width: 255px;
   }
 }
 
@@ -312,9 +312,9 @@ main {
   opacity: 1;
 }
 .card-menu:hover .text-menu {
-  width: 220px;
+  width: 190px;
 }
-@media only screen and (min-width: 520px) {
+@media only screen and (min-width: 426px) {
   .card-menu:hover .text-menu {
     width: 300px;
   }
