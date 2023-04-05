@@ -36,13 +36,18 @@ body {
     align-items: center;
     font-family: 'Shrikhand';
     animation: disapear 5s forwards;
+  
 }
 .lettre {
     color: $darkgrey;
-    font-size: 55px;
+    font-size: 54px;
     margin-bottom: 280px;
     animation: flash 1.2s linear infinite; 
     -moz-animation: flash 1.2s linear infinite; 
+    @media only screen and (max-width:340px){
+        font-size: 40px;
+       
+    }
 }
 
 @keyframes flash {
@@ -125,6 +130,10 @@ body {
     margin: 0px auto;
     margin-bottom: 120px;
     border-radius: 1px 1px 100px 100px;
+    @media only screen and (max-width:340px){
+        width: 260px;
+       
+    }
 }
 #full-bar-loader {
     width: 100%;

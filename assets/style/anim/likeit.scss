@@ -33,7 +33,7 @@ $violet: #9356dc;
                 transition: opacity 0,8s;
                 z-index:2;
 
-            } */
+            } 
     &:hover{
         .empty_heart{
             visibility: hidden;
@@ -45,7 +45,7 @@ $violet: #9356dc;
             opacity: 1;
             z-index:2;
         }
-    }
+    }*/
     &:active{
         .empty_heart{
             visibility: hidden;
@@ -59,7 +59,7 @@ $violet: #9356dc;
             z-index:2;
         }
     }
-    &:visited{
+   /* &:visited{
         .empty_heart{
             visibility: hidden;
             opacity: 0;
@@ -69,6 +69,6 @@ $violet: #9356dc;
             opacity: 1;
             transition: opacity 0,8s;
         }
-    }
+    }*/
   
 }

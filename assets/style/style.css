@@ -17,14 +17,37 @@
   font-size: 25px;
   cursor: pointer;
   /*  
-  .full_heart:hover{
-      visibility: visible;
-      display:none;
-      opacity:1;
-      transition: opacity 0,8s;
-      z-index:2;
+          .full_heart:hover{
+              visibility: visible;
+              display:none;
+              opacity:1;
+              transition: opacity 0,8s;
+              z-index:2;
 
-  } */
+          } 
+  &:hover{
+      .empty_heart{
+          visibility: hidden;
+          opacity: 0;
+          z-index:0;
+      }
+      .full_heart{
+          visibility: visible;
+          opacity: 1;
+          z-index:2;
+      }
+  }*/
+  /* &:visited{
+       .empty_heart{
+           visibility: hidden;
+           opacity: 0;
+       }
+       .full_heart{
+           visibility: visible;
+           opacity: 1;
+           transition: opacity 0,8s;
+       }
+   }*/
 }
 .heart-anim .empty_heart {
   position: absolute;
@@ -44,16 +67,6 @@
   cursor: pointer;
   transition: all 1000ms;
 }
-.heart-anim:hover .empty_heart {
-  visibility: hidden;
-  opacity: 0;
-  z-index: 0;
-}
-.heart-anim:hover .full_heart {
-  visibility: visible;
-  opacity: 1;
-  z-index: 2;
-}
 .heart-anim:active .empty_heart {
   visibility: hidden;
   opacity: 0;
@@ -64,15 +77,6 @@
   opacity: 1;
   transition: opacity 0, 8s;
   z-index: 2;
-}
-.heart-anim:visited .empty_heart {
-  visibility: hidden;
-  opacity: 0;
-}
-.heart-anim:visited .full_heart {
-  visibility: visible;
-  opacity: 1;
-  transition: opacity 0, 8s;
 }
 
 /*  COLOR   */
@@ -109,10 +113,15 @@ body {
 
 .lettre {
   color: #353535;
-  font-size: 55px;
+  font-size: 54px;
   margin-bottom: 280px;
   animation: flash 1.2s linear infinite;
   -moz-animation: flash 1.2s linear infinite;
+}
+@media only screen and (max-width: 340px) {
+  .lettre {
+    font-size: 40px;
+  }
 }
 
 @keyframes flash {
@@ -202,6 +211,11 @@ body {
   margin: 0px auto;
   margin-bottom: 120px;
   border-radius: 1px 1px 100px 100px;
+}
+@media only screen and (max-width: 340px) {
+  .loading-bar {
+    width: 260px;
+  }
 }
 
 #full-bar-loader {

@@ -5,14 +5,37 @@
   font-size: 25px;
   cursor: pointer;
   /*  
-  .full_heart:hover{
-      visibility: visible;
-      display:none;
-      opacity:1;
-      transition: opacity 0,8s;
-      z-index:2;
+          .full_heart:hover{
+              visibility: visible;
+              display:none;
+              opacity:1;
+              transition: opacity 0,8s;
+              z-index:2;
 
-  } */
+          } 
+  &:hover{
+      .empty_heart{
+          visibility: hidden;
+          opacity: 0;
+          z-index:0;
+      }
+      .full_heart{
+          visibility: visible;
+          opacity: 1;
+          z-index:2;
+      }
+  }*/
+  /* &:visited{
+       .empty_heart{
+           visibility: hidden;
+           opacity: 0;
+       }
+       .full_heart{
+           visibility: visible;
+           opacity: 1;
+           transition: opacity 0,8s;
+       }
+   }*/
 }
 .heart-anim .empty_heart {
   position: absolute;
@@ -32,16 +55,6 @@
   cursor: pointer;
   transition: all 1000ms;
 }
-.heart-anim:hover .empty_heart {
-  visibility: hidden;
-  opacity: 0;
-  z-index: 0;
-}
-.heart-anim:hover .full_heart {
-  visibility: visible;
-  opacity: 1;
-  z-index: 2;
-}
 .heart-anim:active .empty_heart {
   visibility: hidden;
   opacity: 0;
@@ -52,13 +65,4 @@
   opacity: 1;
   transition: opacity 0, 8s;
   z-index: 2;
-}
-.heart-anim:visited .empty_heart {
-  visibility: hidden;
-  opacity: 0;
-}
-.heart-anim:visited .full_heart {
-  visibility: visible;
-  opacity: 1;
-  transition: opacity 0, 8s;
 }/*# sourceMappingURL=likeit.css.map */
