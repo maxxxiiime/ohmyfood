@@ -46,19 +46,19 @@ $violet: #9356dc;
             z-index:2;
         }
     }
-        &:active{
-            .empty_heart{
-                visibility: hidden;
-                opacity: 0;
-                z-index:0;
-            }
-            .full_heart{
-                visibility: visible;
-                opacity: 1;
-                transition: opacity 0,8s;
-                z-index:2;
-            }
+    &:active{
+        .empty_heart{
+            visibility: hidden;
+            opacity: 0;
+            z-index:0;
         }
+        .full_heart{
+            visibility: visible;
+            opacity: 1;
+            transition: opacity 0,8s;
+            z-index:2;
+        }
+    }
 
   
 }
