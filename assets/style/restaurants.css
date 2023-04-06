@@ -27,6 +27,7 @@ body {
   font-family: "Roboto", sans-serif;
 }
 
+/** deroulement en fondue */
 .all-entrees {
   animation: fondue 0.65s;
 }
@@ -39,6 +40,7 @@ body {
   animation: fondue 3s;
 }
 
+/** KEYFRAMES deroulement en fondue */
 @keyframes fondue {
   from {
     transform: translateY(111px);
@@ -66,6 +68,11 @@ body {
   top: 30%;
   font-size: 22px;
   color: #353535;
+  transition: all 0.5s ease-in-out;
+}
+.back-home:hover {
+  color: #ff79da;
+  font-size: 24px;
 }
 
 .logo-header {
@@ -94,24 +101,17 @@ body {
   color: #9356dc;
   font-size: 25px;
   cursor: pointer;
-  margin-right: 15px;
-  /*  
-  .full_heart:hover{
-      visibility: visible;
-      display:none;
-      opacity:1;
-      transition: opacity 0,8s;
-      z-index:2;
-
-  } */
+  margin-right: 7%;
+  margin-top: -4px;
+  /*  heart hover */
 }
 .heart-anim .empty_heart {
   position: absolute;
   bottom: 10%;
   right: 2%;
   visibility: visible;
-  transition: 1000ms;
   cursor: pointer;
+  transition: all 1000ms;
 }
 .heart-anim .full_heart {
   display: flex;
@@ -121,7 +121,7 @@ body {
   bottom: 10%;
   right: 2%;
   cursor: pointer;
-  transition: 1000ms;
+  transition: all 1000ms;
 }
 .heart-anim:hover .empty_heart {
   visibility: hidden;
@@ -131,7 +131,6 @@ body {
 .heart-anim:hover .full_heart {
   visibility: visible;
   opacity: 1;
-  transition: opacity 0, 8s;
   z-index: 2;
 }
 .heart-anim:active .empty_heart {
@@ -142,17 +141,7 @@ body {
 .heart-anim:active .full_heart {
   visibility: visible;
   opacity: 1;
-  transition: opacity 0, 8s;
   z-index: 2;
-}
-.heart-anim:visited .empty_heart {
-  visibility: hidden;
-  opacity: 0;
-}
-.heart-anim:visited .full_heart {
-  visibility: visible;
-  opacity: 1;
-  transition: opacity 0, 8s;
 }
 
 /*  MAIN MENU   */
@@ -198,7 +187,7 @@ main {
   padding-top: 26px;
 }
 
-/** EST CE QU ON peut faire sa seulement en scss ? */
+/** text menu responsive */
 .text-menu {
   height: auto;
   width: 320px;
@@ -207,7 +196,7 @@ main {
   text-overflow: ellipsis;
   transition: width 1s;
 }
-@media only screen and (max-width: 375px) {
+@media only screen and (max-width: 395px) {
   .text-menu {
     width: 255px;
   }
@@ -236,6 +225,7 @@ main {
   overflow: hidden;
   text-overflow: ellipsis;
   white-space: nowrap;
+  /** bouton check */
 }
 .card-menu h4 {
   margin: 10px auto 5px 6px;
@@ -260,7 +250,7 @@ main {
   display: flex;
   justify-content: flex-end;
   align-items: flex-end;
-  font-family: Roboto;
+  font-family: "Roboto";
   font-size: 15px;
   font-weight: 700;
   margin-top: 36px;
@@ -285,9 +275,11 @@ main {
   opacity: 0;
 }
 
+/** bouton check HOVER */
 .card-menu:hover {
   box-shadow: 2px 2px 11px rgba(0, 0, 0, 0.6);
-  /** a verifier **/
+  /**  anim check duration */
+  /** text menu responsive hidden desktop **/
 }
 .card-menu:hover .green-check-it {
   position: absolute;
@@ -320,6 +312,7 @@ main {
   }
 }
 
+/** keyframes anim yeah bouton check */
 @keyframes yeahh {
   from {
     transform: translatex(11px) rotate(360deg);
@@ -408,6 +401,7 @@ footer li i {
   margin: 5% 3% 2% 5%;
 }
 
+/** Media screen desktop */
 @media (min-width: 1024px) {
   main {
     background-color: #ffffff;
@@ -421,7 +415,7 @@ footer li i {
     width: 60%;
     margin: auto;
   }
-  /* HEART  desktop */
+  /* HEART margin desktop */
   .heart-anim {
     margin-right: 15%;
   }
@@ -453,14 +447,11 @@ footer li i {
   }
   /* FOOTER  desktop */
   footer {
-    background-color: #353535;
-    color: #ffffff;
     height: 114px;
     display: flex;
     flex-direction: row-reverse;
   }
   footer ul {
-    color: #ffffff;
     display: flex;
     flex-direction: row;
   }
@@ -469,16 +460,9 @@ footer li i {
     margin: auto 10px;
   }
   #section-footer {
-    color: #ffffff;
     width: 100%;
     display: flex;
     flex-direction: row-reverse;
-  }
-  footer li {
-    line-height: 2em; /* espace entre les li proportionnel a la taille de la police */
-    list-style-type: none;
-    list-style-position: outside;
-    color: #ffffff;
   }
   footer li i {
     margin: auto 10px;

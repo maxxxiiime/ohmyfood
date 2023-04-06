@@ -1,13 +1,13 @@
 /*  HEART   */
 $violet: #9356dc;
+$rose: #ff79da;
 .heart-anim{
     position: relative;
-    color: $violet;
     font-size: 25px;
     cursor: pointer;
 
     .empty_heart{
-    position: absolute;
+    position: absolute;   
     bottom: 10%;
     right:2%;
     visibility: visible;
@@ -24,16 +24,9 @@ $violet: #9356dc;
         right:2%;
         cursor: pointer;
         transition: all 1000ms;
+        
     }
-            /*  
-            .full_heart:hover{
-                visibility: visible;
-                display:none;
-                opacity:1;
-                transition: opacity 0,8s;
-                z-index:2;
-
-            } */
+            /* hover and active  */
     &:hover{
         .empty_heart{
             visibility: hidden;
@@ -41,6 +34,7 @@ $violet: #9356dc;
             z-index:0;
         }
         .full_heart{
+            
             visibility: visible;
             opacity: 1;
             z-index:2;
@@ -55,7 +49,6 @@ $violet: #9356dc;
         .full_heart{
             visibility: visible;
             opacity: 1;
-            transition: opacity 0,8s;
             z-index:2;
         }
     }

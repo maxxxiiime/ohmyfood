@@ -1,18 +1,9 @@
 /*  HEART   */
 .heart-anim {
   position: relative;
-  color: #9356dc;
   font-size: 25px;
   cursor: pointer;
-  /*  
-  .full_heart:hover{
-      visibility: visible;
-      display:none;
-      opacity:1;
-      transition: opacity 0,8s;
-      z-index:2;
-
-  } */
+  /* hover and active  */
 }
 .heart-anim .empty_heart {
   position: absolute;
@@ -50,6 +41,5 @@
 .heart-anim:active .full_heart {
   visibility: visible;
   opacity: 1;
-  transition: opacity 0, 8s;
   z-index: 2;
 }/*# sourceMappingURL=likeit.css.map */
