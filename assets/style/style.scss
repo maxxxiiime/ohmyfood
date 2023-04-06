@@ -168,22 +168,23 @@ to {
  /*  ***********   */
 .header {
     display: flex;
+    position: relative;
     flex-direction: column;
-    box-shadow: 0px 2px 9px rgba(0, 0, 0, 0.3);
-    z-index: 2;
-
-    .logo {
-        display: flex;
-        justify-content: center;
-        margin-bottom: 5px;
-
-        .logo-ohmyfood {
-            display: flex;
-            height: auto;
-            width: 162px;
-            margin: 14px 0px 5px 0px;
+    box-shadow: 2px 2px 12px 1px rgba(0, 0, 0, 0.5);
+    height: 63px;
+    z-index: 1;
+    .logo-header {
+        font-family: 'Shrikhand';
+        
+        text-align: center;
+        color:black;
+        margin:  1% auto 2% auto;;
+        h1{
+            font-size: 30px;
         }
+     
     }
+ 
 }
  
     .location {

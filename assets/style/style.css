@@ -219,20 +219,20 @@ body {
 /*  ***********   */
 .header {
   display: flex;
+  position: relative;
   flex-direction: column;
-  box-shadow: 0px 2px 9px rgba(0, 0, 0, 0.3);
-  z-index: 2;
+  box-shadow: 0px 2px 9px rgba(0, 0, 0, 0.4);
+  height: 63px;
+  z-index: 1;
 }
-.header .logo {
-  display: flex;
-  justify-content: center;
-  margin-bottom: 5px;
+.header .logo-header {
+  font-family: "Shrikhand";
+  text-align: center;
+  color: black;
+  margin: 1% auto 2% auto;
 }
-.header .logo .logo-ohmyfood {
-  display: flex;
-  height: auto;
-  width: 162px;
-  margin: 14px 0px 5px 0px;
+.header .logo-header h1 {
+  font-size: 30px;
 }
 
 .location {

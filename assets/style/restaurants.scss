@@ -103,7 +103,7 @@ z-index: 1;
         right:2%;
         visibility: visible;
         cursor: pointer;
-        transition: all 1000ms;
+        
         }
             
         .full_heart{
@@ -193,7 +193,7 @@ main {
     overflow: hidden;
     text-overflow: ellipsis;
     transition: width 1s;
-
+    
     @media only screen and (max-width:395px){
         width: 255px;
     }

@@ -111,7 +111,6 @@ body {
   right: 2%;
   visibility: visible;
   cursor: pointer;
-  transition: all 1000ms;
 }
 .heart-anim .full_heart {
   display: flex;
