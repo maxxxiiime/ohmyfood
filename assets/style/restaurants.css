@@ -103,6 +103,7 @@ body {
   cursor: pointer;
   margin-right: 7%;
   margin-top: -4px;
+  transition: all 1000ms;
   /*  heart hover */
 }
 .heart-anim .empty_heart {
@@ -111,6 +112,7 @@ body {
   right: 2%;
   visibility: visible;
   cursor: pointer;
+  transition: all 1000ms;
 }
 .heart-anim .full_heart {
   display: flex;
