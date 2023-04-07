@@ -341,10 +341,7 @@ main {
   border-radius: 25px;
   background: linear-gradient(350deg, #9356dc 35%, #ff79da 100%);
   box-shadow: 0px 3px 10px rgba(0, 0, 0, 0.4);
-  transition-property: transform;
-  transition-duration: 400ms;
-  transition: opacity 800ms ease-in-out;
-  transition: box-shadow 0.8s ease-in-out;
+  transition: all 800ms ease-in-out;
   opacity: 1;
 }
 
@@ -354,7 +351,7 @@ main {
 
 .btn:hover {
   box-shadow: 1px 4px 15px rgba(0, 0, 0, 0.5);
-  background: linear-gradient(-350deg, #985ede 35%, #ff83dd 100%);
+  background: linear-gradient(342deg, #985ede 35%, #ff83dd 100%);
   opacity: 0.6;
   transition: opacity 800ms ease-in-out;
 }

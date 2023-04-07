@@ -347,17 +347,17 @@ h2 {
 .filters123 .icons-filters {
   position: absolute;
   top: 50%;
-  fill: rgb(123, 123, 123) !important;
+  fill: rgb(123, 123, 123);
   margin-left: 10%;
   transform: translate(-50%, -50%);
   transition: fill 0.8s ease-in-out;
 }
 .filters123 .btn-filters:hover .icons-filters {
-  fill: #9356dc !important;
+  fill: #9356dc;
   background: #F5EDFF;
 }
 .filters123 .btn-filters:hover .icons-filters .icons-filters:hover {
-  fill: #9356dc !important;
+  fill: #9356dc;
   margin-left: 10%;
 }
 
@@ -430,15 +430,10 @@ h2 {
            display: none;
            visibility: hidden;
         }
-
-
-
         .fa-solid fa-heart {
             display:none;
             opacity: 0;
         }
-
-
 */
 /* FOOTER   */
 footer {

@@ -308,21 +308,20 @@ to {
         .icons-filters { 
             position: absolute;
             top:50%;
-            fill: rgb(123, 123, 123) !important;
+            fill: rgb(123, 123, 123);
             margin-left: 10%;
             transform: translate(-50%, -50%);
             transition: fill 0.8s ease-in-out;
         }
 
         .btn-filters:hover .icons-filters{
-            fill: $violet !important;
+            fill: $violet;
             background: $roseclaire;
                  
          .icons-filters:hover { 
-            fill: $violet !important;
+            fill: $violet;
             margin-left: 10%;
-          } 
-          
+          }         
         } 
     }
 
@@ -374,7 +373,6 @@ to {
                 top:10px;
                 right:10px;
 
-
             }
         }
         .resto-cards-img img {
@@ -396,15 +394,10 @@ to {
            display: none;
            visibility: hidden;
         }
-
-
-
         .fa-solid fa-heart {
             display:none;
             opacity: 0;
         }
-
-
 */
          /* FOOTER   */
 footer {
