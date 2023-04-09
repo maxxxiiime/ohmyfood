@@ -15,7 +15,7 @@
   position: relative;
   font-size: 25px;
   cursor: pointer;
-  /* hover and active  */
+  /* hover   */
 }
 .heart-anim .empty_heart {
   position: absolute;
@@ -45,16 +45,6 @@
   opacity: 1;
   z-index: 2;
 }
-.heart-anim:active .empty_heart {
-  visibility: hidden;
-  opacity: 0;
-  z-index: 0;
-}
-.heart-anim:active .full_heart {
-  visibility: visible;
-  opacity: 1;
-  z-index: 2;
-}
 
 /*  COLOR   */
 /*  initialize   */
@@ -74,7 +64,7 @@ body {
   font-family: "Roboto", sans-serif;
 }
 
-/*  **  LOAADER**   */
+/*  **  LOADER**   */
 /**/
 .loader {
   position: absolute;
@@ -147,15 +137,15 @@ body {
   animation-delay: 0.8s;
 }
 
-.lettre:nth-child(8) {
+.lettre:nth-child(9) {
   animation-delay: 0.9s;
 }
 
-.lettre:nth-child(8) {
+.lettre:nth-child(10) {
   animation-delay: 0.95s;
 }
 
-.lettre:nth-child(8) {
+.lettre:nth-child(11) {
   animation-delay: 1s;
 }
 
@@ -198,7 +188,6 @@ body {
 #full-bar-loader {
   width: 100%;
   animation: Animate-loader 5s;
-  -webkit-animation: Animate-loader 5s;
   -moz-animation: Animate-loader 5s;
   -o-animation: Animate-loader 5s;
   height: 44px;
@@ -477,7 +466,8 @@ footer li i {
   margin: 5% 3% 2% 0;
 }
 
-/* test  */
+/* ********  */
+/* DESKTOP  */
 @media (min-width: 1024px) {
   .filters123 .content-function {
     display: flex;

@@ -24,7 +24,7 @@ a {
 body {
     font-family: 'Roboto', sans-serif;
 }
- /*  **  LOAADER**   */
+ /*  **  LOADER**   */
   /**/
  .loader {
     position: absolute;
@@ -88,13 +88,13 @@ body {
 .lettre:nth-child(8){
     animation-delay: 0.8s;
 }
-.lettre:nth-child(8){
+.lettre:nth-child(9){
     animation-delay: 0.9s;
 }
-.lettre:nth-child(8){
+.lettre:nth-child(10){
     animation-delay: 0.95s;
 }
-.lettre:nth-child(8){
+.lettre:nth-child(11){
     animation-delay: 1s;
 }
  /* Disparition */
@@ -118,8 +118,6 @@ body {
   }
  
 
-
-
  /* loading bar  */
   /**/
 .loading-bar {
@@ -131,14 +129,12 @@ body {
     margin-bottom: 120px;
     border-radius: 1px 1px 100px 100px;
     @media only screen and (max-width:340px){
-        width: 260px;
-       
+        width: 260px;    
     }
 }
 #full-bar-loader {
     width: 100%;
     animation: Animate-loader 5s;
-    -webkit-animation: Animate-loader 5s;
     -moz-animation: Animate-loader 5s;
     -o-animation: Animate-loader 5s;
     height: 44px;
@@ -148,7 +144,6 @@ body {
 }
 
 /* KEYFRAMES loading bar  */
-  
 @keyframes Animate-loader {
     from {
     width: 50px;
@@ -174,17 +169,14 @@ to {
     height: 63px;
     z-index: 1;
     .logo-header {
-        font-family: 'Shrikhand';
-        
+        font-family: 'Shrikhand';  
         text-align: center;
         color:black;
         margin:  1% auto 2% auto;;
         h1{
             font-size: 30px;
-        }
-     
-    }
- 
+        }   
+    } 
 }
  
     .location {
@@ -222,7 +214,6 @@ to {
             margin: 10px 25px 10px 25px;
         }
     
-
      .btn{ 
         height: 50px;
         width: 218px;
@@ -236,18 +227,15 @@ to {
         transition: all 800ms ease-in-out;
         opacity: 1;
         cursor: pointer;
- 
      }
      .btn a{ 
         color:$blanc;
-
      }
 
      .btn:hover {
         box-shadow: 1px 4px 15px rgba(0, 0, 0, 0.5);
         background: linear-gradient(340deg, $violet 35%, $rose 100%); 
         opacity: 0.7;
-        
      }
     }
      /*  FONCTIONNEMENT   */
@@ -325,7 +313,6 @@ to {
         } 
     }
 
-
 /*  RESTAURANTS   */
     #restaurants {
         width: 100%;
@@ -366,7 +353,6 @@ to {
             transition: all 0.6s;
             &:hover{
                 box-shadow: 0px 4px 14px rgba(0, 0, 0, 0.4);
-
             }
             .label-new {
                 position:absolute;
@@ -405,19 +391,15 @@ footer {
     color: $blanc;
     padding: 10px 0px;
     display: flex;
-    flex-direction: column;
-
-    
+    flex-direction: column;    
 }
 
 footer ul{
     color:$blanc;
-margin-bottom: 30px;
+    margin-bottom: 30px;
 }
-footer ul li a{
-   
-    color:$blanc;
-    
+footer ul li a{ 
+    color:$blanc;  
 }
 #section-footer {
     color: #ffffff;
@@ -434,29 +416,21 @@ footer li {
   
   }
 
-
   footer li i{
    margin-right: 10px;
-   width:18px;
-  
+   width:18px;  
   }
 
- 
         .logo-footer {
             font-family: 'Shrikhand';
             color:$blanc;
             margin:  5% 3% 2% 0;
         }
-/* test  */
-     
 
-
-     
-
-
+/* ********  */
+/* DESKTOP  */
 
 @media (min-width: 1024px) {
-
         .filters123 {
                 .content-function {
                 display: flex;
@@ -470,19 +444,17 @@ footer li {
         #restaurants {
             width: 100%;
             display: flex;
-            flex-direction: column;
-            
+            flex-direction: column;   
             background-color: $lightgrey;
             align-items: center;
             justify-content: center;
     .resto-list {
         display: flex;
-            flex-direction: row;
+        flex-direction: row;
         flex-wrap: wrap;
         margin:20px 15px;
         align-items: center;
-            justify-content: space-evenly;
-    
+        justify-content: space-evenly;    
     }
             .resto-cards {
                 position: relative;
@@ -490,12 +462,9 @@ footer li {
                 flex-direction: column;
                 width: 45%;
                 margin: 20px 5px ;
-                height: 251px;
-        
+                height: 251px;       
             }
         }
-
-
 
                  /* FOOTER  desktop */
 footer {
